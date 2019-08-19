@@ -1,0 +1,40 @@
+/*eae7e7*/
+.icono
+{
+color:  #ffcc00;
+width: 100%;
+}
+body{
+  background-color: #191919;
+}
+.marco{
+  background-color: rgba(91, 121, 137, 0.2);;
+}
+@media  (min-width: 900px) {
+  .logo>img{
+          width: 35%;
+    }
+
+  .iconos{
+    padding-top: 8vh;
+    }
+
+  }
+
+
+  @media  (max-width: 899px) {
+    .logo{
+      display: flex  !important;
+      justify-content: center  !important;
+      align-items: center  !important;
+
+      }
+      .logo>img{
+              width: 35%;
+        }
+      .iconos{
+        display: flex  !important;
+        justify-content: center  !important;
+        align-items: center  !important;
+        }
+    }
