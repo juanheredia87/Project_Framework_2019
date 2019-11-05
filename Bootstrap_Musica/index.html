@@ -4,36 +4,38 @@
     <meta charset="utf-8">
     <title></title>
     <!-- BOOTSTRAP 4 -->
+
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- LIBRERIA ICONOS -->
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <!-- SCROOLL REVEAL JS LIBRARY CDN -->
     <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
-    <!-- CUSTOM CSS -->
     <link rel="stylesheet" href="css/estilos.css">
+    <!-- CUSTOM CSS -->
+
+
   </head>
   <body >
-    <div class="container  marco mt-2">
-      <header>
+    <div class="container marco ">
+      <header class="sticky-top bg-dark">
          <div class="row ">
             <!-- seccion iconos -->
             <div class="col-lg-6  col-md-6 col-sm-12 logo mt-2 ">
                 <img class="" src="img/logo.png" >
             </div>
-            <!-- final seccion logo -->
 
             <!-- seccion iconos -->
             <div class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-end mb-1 iconos  ">
-                 <button class="btn "><i class="fa fa-twitter-square icono"></i></button>
-                 <button class="btn "><i class="fa fa-facebook-square icono"></i></button>
-                 <button class="btn "><i class="fa fa-youtube-square icono"></i></button>
-                 <button class="btn "><i class="fa fa-instagram icono "></i></button>
+                 <button class="btn "><i class="fa fa-twitter-square fa-lg icono"></i></button>
+                 <button class="btn "><i class="fa fa-facebook-square fa-lg icono"></i></button>
+                 <button class="btn "><i class="fa fa-youtube-square fa-lg icono"></i></button>
+                 <button class="btn "><i class="fa fa-instagram fa-lg icono "></i></button>
             </div>
-            <!-- final seccion iconos -->
 
             <!-- seccion Menu -->
-            <div class="col-lg-12  col-md-12 col-sm-12 ">
-              <div class="btn-group btn-group-toggle d-flex justify-content-between" data-toggle="buttons">
+            <div class="col-lg-12  col-md-12 col-sm-12  menu">
+              <div class="btn-group btn-group-toggle d-flex justify-content-between collapse" data-toggle="buttons" id="navbarNavAltMarkup">
               <label class="btn btn-secondary active">
                 <input type="radio" name="options" id="option1" autocomplete="off" checked> Inicio
               </label>
@@ -54,16 +56,109 @@
               </label>
               </div>
             </div>
-            <!-- final seccion Menu -->
+        </div>
+      </header>
+      <br>
+
+
+      <div class="container ">
+        <div class="row">
+          <!-- secciones izquierda -->
+          <div class="col-lg-8 col-md-8 col-sm-12 bg-dark mb-4">
+            <!-- articulo 1 -->
+            <section class="mt-3">
+              <div class="container ">
+                <h2 class="icono">Green Day</h2>
+                <div class="row mt-3">
+                  <div class="col-md-6 mb-3">
+                    <div class="info-left">
+                      <img src="img/musica1.jpg" class="img-fluid" alt="Responsive image">
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="info-right">
+                      <p class="text-justify text-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- comentario 1 -->
+                <form class="form-group">
+                  <div class="input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1 "><i class="fa fa-user fa-lg icono"></i></span>
+                      </div>
+                      <input class="form-control " type="search" placeholder="Comentarios de los usuarios" aria-label="Search">
+                  </div>
+                </form>
+              </div>
+            </section>
+
+            <!-- articulo 2 -->
+            <section >
+              <div class="container ">
+                <h2 class="icono">Bon Jovy</h2>
+                <div class="row mt-3 ">
+                  <div class="col-md-6">
+                    <div class="info-right">
+                      <p class="text-justify text-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="col-md-6 mb-3">
+                    <div class="info-left">
+                      <img src="img/musica2.jpg" class="img-fluid" alt="Responsive image">
+                    </div>
+                  </div>
+                </div>
+                <!-- comentario 2 -->
+                <form class="form-group">
+                  <div class="input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1 "><i class="fa fa-user fa-lg icono"></i></span>
+                      </div>
+                      <input class="form-control " type="search" placeholder="Comentarios de los usuarios" aria-label="Search">
+                  </div>
+                </form>
+              </div>
+
+            </section>
           </div>
-          </header>
-          <br>
+          <!-- busqueda y opciones -->
+          <div class="col-lg-4  col-md-4  d-none d-lg-block  buscar" >
+            <nav class="navbar  d-flex justify-content-end  pr-1">
+              <form class="form-inline">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1 "><i class="fa fa-search"></i></span>
+                </div>
+                <input class="form-control mr-sm-4" type="search" placeholder="Buscar" aria-label="Search">
+                </div>
+                <button class="btn btn-outline-warning btn-md ml-1" type="submit">Buscar</button>
+              </form>
+            </nav>
 
+              <div class="list-group d-flex justify-content-between align-items-center ml-4">
+                <button type="button" class="list-group-item list-group-item-action ">
+                  Cras justo odio
+                </button>
+                <button type="button" class="list-group-item list-group-item-action">Dapibus ac facilisis in</button>
+                <button type="button" class="list-group-item list-group-item-action">Morbi leo risus</button>
+                <button type="button" class="list-group-item list-group-item-action">Porta ac consectetur ac</button>
+                <button type="button" class="list-group-item list-group-item-action" disabled>Vestibulum at eros</button>
+                <button type="button" class="list-group-item list-group-item-action">Dapibus ac facilisis in</button>
+                <button type="button" class="list-group-item list-group-item-action">Morbi leo risus</button>
+                <button type="button" class="list-group-item list-group-item-action">Porta ac consectetur ac</button>
+                <button type="button" class="list-group-item list-group-item-action" disabled>Vestibulum at eros</button>
+                <button type="button" class="list-group-item list-group-item-action">Dapibus ac facilisis in</button>
+                <button type="button" class="list-group-item list-group-item-action">Morbi leo risus</button>
+                <button type="button" class="list-group-item list-group-item-action">Porta ac consectetur ac</button>
 
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-
-
-    </div>
 
       <!-- <p>Fire icon: <span class="glyphicon glyphicon-fire"></span></p>
       <button type="button" class="btn btn-warning btn-sm">Prueba

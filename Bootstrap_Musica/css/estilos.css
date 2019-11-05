@@ -7,9 +7,18 @@ width: 100%;
 body{
   background-color: #191919;
 }
+
+
 .marco{
-  background-color: rgba(91, 121, 137, 0.2);;
+  background-color: rgba(91, 121, 137, 0.2);
 }
+.buscar{
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  }
+
+
+
 @media  (min-width: 900px) {
   .logo>img{
           width: 35%;
@@ -18,16 +27,23 @@ body{
   .iconos{
     padding-top: 8vh;
     }
-
   }
 
 
   @media  (max-width: 899px) {
+    /* header{
+      position: fixed !important;
+      }
+
+      .contenedor_small{
+        margin-top: 11rem;
+        } */
+
+
     .logo{
       display: flex  !important;
       justify-content: center  !important;
       align-items: center  !important;
-
       }
       .logo>img{
               width: 35%;
