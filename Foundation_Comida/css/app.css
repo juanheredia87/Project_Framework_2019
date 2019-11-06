@@ -7,12 +7,30 @@
     /*border: solid 1px;
     border-color:black;*/
 }
+
+.panel2{
+  background-color: #F7F6E4!important;
+  margin-top: 1%;
+
+    /*border: solid 1px;
+    border-color:black;*/
+}
+
 .menu_p{
 /*  border-color: gray  !important;*/
   margin-top: 0.5%;
   color:#F7F6E4 !important;
   text-align:  left !important;
   background: #027EBA !important;
+
+}
+.img_blog{
+width: 100%
+  }
+
+.blog{
+  margin-top: 4.1vh;
+  border-bottom: 1px solid #8a8a8a;
 }
 
 #buscador {
