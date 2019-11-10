@@ -1,32 +1,45 @@
+
 .cuerpo{
-  background-color: #F2AC34;
+  /*background-color: #F2AC34;*/
+background-image: url(../img/fondo_comida1_1.jpg);
+background-repeat: no-repeat;
+background-attachment:  fixed;
+background-size:cover;
 }
 .panel{
-  background-color: #F7F6E4 !important;
-  margin-top: 1%;
-    /*border: solid 1px;
-    border-color:black;*/
+  /*background-color: #F7F6E4 !important;*/
+background-color: rgb(247,246,228,0.9);
+margin-top: 1%;
 }
 
 .panel2{
-  background-color: #F7F6E4!important;
+  /*background-color: #F7F6E4!important;*/
+  background-color: rgb(247,246,228,0.8);
   margin-top: 1%;
+}
 
-    /*border: solid 1px;
-    border-color:black;*/
+#animatedModal10{
+background-color: rgb(2,126,186,0.8);
+color: #F7F6E4;
+}
+
+.comentario {
+margin-right: -6% !important;
 }
 
 .menu_p{
-/*  border-color: gray  !important;*/
   margin-top: 0.5%;
   color:#F7F6E4 !important;
   text-align:  left !important;
   background: #027EBA !important;
-
 }
+
 .img_blog{
 width: 100%
-  }
+}
+.img_comentario{
+  width: 90%
+}
 
 .blog{
   margin-top: 4.1vh;
@@ -46,6 +59,13 @@ border-bottom: 1px solid #8a8a8a;
   text-shadow: 2px 2px 2px  #02010a;
   background: #F2AC34 !important;
   }
+
+
+
+#btn_comentario a:hover{
+    text-shadow: 2px 2px 2px  #02010a;
+    background: #F2AC34 !important;
+    }
 
   .animated-search-form[type=search] {
     width: 10rem;
@@ -73,6 +93,11 @@ border-bottom: 1px solid #8a8a8a;
 
   }
 
+  #menu1 a:hover{
+      text-shadow: 2px 2px 2px  #02010a;
+      background: #F2AC34 !important;
+      }
+
   #Favoritos {
   margin-top: 1.1vh;
   border-bottom: 1px solid #8a8a8a;
@@ -81,13 +106,6 @@ border-bottom: 1px solid #8a8a8a;
   #Historial {
   margin-top: 1.1vh;
   border-bottom: 1px solid #8a8a8a;
-  }
-
-
-
-#menu1 a:hover{
-  text-shadow: 2px 2px 2px  #02010a;
-  background: #F2AC34 !important;
   }
 
 .hover-underline-menu {
@@ -122,9 +140,6 @@ border-bottom: 1px solid #8a8a8a;
   right: 0;
   transition: all 0.5s ease;
 }
-
-
-
 
 .img_favoritos{
   width: 31%;
@@ -175,7 +190,6 @@ border-bottom: 1px solid #8a8a8a;
   background-color: #fefefe;
 }
 
-
  @media  (min-width: 960px) {
   .logo{    width: 20%;
   margin-bottom: 1vh;}
@@ -184,9 +198,15 @@ border-bottom: 1px solid #8a8a8a;
   @media  (min-width: 600px) and (max-width: 959px) {
   .logo{  width:20%;
   margin-bottom: 1vh;}
+  .comentario {
+  margin-right: 0% !important;
+    }
   }
 
   @media  (max-width: 599px) {
   .logo{  width:35%;
   margin-bottom: 1vh;}
+  .comentario {
+  margin-right: 0% !important;
+    }
   }
